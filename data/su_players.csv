@@ -1,29 +1,75 @@
-number;name;image_url;birthdate;position
-1;Dangl;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/1_DANGL.png;;
-7;Gretz;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/7_GRETZ.png;;ST
-5;Kirchner;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/5_KIRCHNER.png;20.08.2000;
-14;Bobleter;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/14_BOBLETER.png;;
-15;SchöNhofer;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/15_SCHÖNHOFER.png;;
-11;Blauensteiner;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/11_BLAUENSTEINER.png;;ST
-20;Garschall;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/20_GARSCHALL.png;26.10.2001;
-8;Paydal;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/8_PAYDAL.png;;
-69;Zlabinger;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/69_Zlabinger.png;;
-99;Wagner;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/99_WAGNER.png;;LM
-12;Koppensteiner;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/12_KOPPENSTEINER.png;01.07.1992;
-13;Omengue;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/13_OMENGUE.png;;
-19;Brenner;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/19_BRENNER.png;;
-10;Lugauer;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/10_LUGAUER.png;;RM
-16;Leutgeb;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/16_LEUTGEB.png;20.01.1999;
-4;Moyo;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/4_MOYO.png;;
-18;Gattinger;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/18_GATTINGER.png;;
-27;BaumgäRtner;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/27_BAUMGÄRTNER.png;;ST
-2;Jachs;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/2_JACHS.png;25.05.1989;
-07;12 1990 Christoph-Spitaler;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/07_12_1990_Christoph-Spitaler.png;;
-08;09 2000 Ferdinand-Steindl;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/08_09_2000_Ferdinand-Steindl.png;;
-15;02 2000 Oliver-Seidl-Removebg-Preview;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/15_02_2000_Oliver-Seidl-removebg-preview.png;;
-28;10 1998 Daniel-Ginter;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/28_10_1998_Daniel-Ginter.png;24.09.1998;
-02;Wimmer Werner;http://www.hobbyliga-zwettl.at/wp-content/uploads/2015/07/02_Wimmer_Werner-e1437919255600.jpg;;
-03;Gell Peter;http://www.hobbyliga-zwettl.at/wp-content/uploads/2015/07/03_Gell_Peter-e1437919262572.jpg;;
-1;Spieler Michael Schindler;http://www.hobbyliga-zwettl.at/wp-content/uploads/2025/08/1_Spieler_Michael_Schindler.png;;RM
-2;Spieler Samuel Neuninger;http://www.hobbyliga-zwettl.at/wp-content/uploads/2025/08/2_Spieler_Samuel_Neuninger.jpeg;06.10.2003;
-504433912;23982704381326300 7002802739904533497 N;http://www.hobbyliga-zwettl.at/wp-content/gallery/meister/504433912_23982704381326300_7002802739904533497_n.jpg;;
+number;name;image_url;birthdate
+1;Daniel Dangl;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/1_DANGL.png;20.08.2000
+7;Sebastian Gretz;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/7_GRETZ.png;24.01.2000
+5;Christoph Kirchner;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/5_KIRCHNER.png;10.05.2001
+14;Jonathan Bobleter;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/14_BOBLETER.png;26.10.2001
+15;Georg Schönhofer;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/15_SCHÖNHOFER.png;11.01.2002
+11;Florian Blauensteiner;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/11_BLAUENSTEINER.png;26.03.1999
+20;Raphael Garschall*;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/20_GARSCHALL.png;01.07.1992
+8;Christoph Paydal;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/8_PAYDAL.png;12.04.2000
+69;Marco Zlabinger;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/69_Zlabinger.png;04.05.2000
+99;Marcel Wagner;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/99_WAGNER.png;20.01.1999
+;Benedikt Weissinger;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/X_WEISSINGER.png;01.10.2000
+12;Markus Koppensteiner;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/12_KOPPENSTEINER.png;03.03.2001
+13;Christian Omengue;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/13_OMENGUE.png;25.05.1989
+19;Thomas Brenner;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/19_BRENNER.png;16.04.2003
+;Lorenz Göschl;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/X_GÖSCHL.png;01.07.2000
+10;David Lugauer;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/10_LUGAUER.png;24.09.1998
+16;Alexander Leutgeb;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/16_LEUTGEB.png;01.08.1993
+4;Pete Moyo;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/4_MOYO.png;03.12.1987
+;Leo Steinkellner;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/X_STEINKELLNER.png;06.10.2003
+18;Maximilian Gattinger;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/18_GATTINGER.png;25.12.1999
+27;Christoph Baumgärtner;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/27_BAUMGÄRTNER.png;27.01.1992
+;Markus Petrovic;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/X_Petrovic.png;04.09.1985
+2;Florian Jachs;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/2_JACHS.png;06.04.2000
+;Ante Plazibat;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/Unbenannt.png;13.06.1980
+;Jakob Rederlechner;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/rederlechner.png;05.04.2003
+;Isaak Wallner;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/Isaak-Wallner1301.2000.jpeg;13.01.2000
+;Dominik Houschko;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/Dominik_Houschko_02042009-150x150.jpeg;02.04.2009
+;Bernhard Paukner;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/Paukner-removebg-preview.png;17.12.2006
+;Johannes Hersch;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/Johannes_Herrsch-removebg-preview.png;11.11.2005
+;Fabian Scheikl;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/Unbenannt.jpg;26.09.2005
+;Johannes Wittmann;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/Johannes-Wittmann-removebg-preview.png;12.03.2000
+;Alexander Lugauer;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/Alexander-Lugauer-08-02-1993-removebg-preview.png;08.02.1993
+;Michael Decker;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/Michael-Decker-removebg-preview.png;06.07.1997
+;Dominik Jordan;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/Jordan-Dominik-e1438523026465-removebg-preview.png;13.07.2000
+;Patrick Neumann;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/Patrick-Neumann-removebg-preview.png;18.11.1990
+;Daniel Welser;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/DanielWelser_07.03.1993.jpg;07.03.1991
+;Florian Metz;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/FlorianMEtz180985.jpg;18.09.1985
+;Kevin Augsutin;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/Kevin_Augustin_07.12.1993.jpg;07.12.1993
+;Antonio Plazibat;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/Antonio_Plazibat_30.09.2007.jpg;30.09.2007
+07;Christoph Spitaler;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/07_12_1990_Christoph-Spitaler.png;07.12.1990
+08;Ferdinand Steindl;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/08_09_2000_Ferdinand-Steindl.png;08.09.2000
+15;Oliver Seidl;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/15_02_2000_Oliver-Seidl-removebg-preview.png;15.02.2000
+;Melvin Pichler;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/Melvin-Pichler130298.jpg;13.02.1998
+;Patrick Kaiser;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/PatrikKaiser09031987.jpg;09.03.1987
+;Jürgen Sinhuber;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/Jürgen_Sinhuber_26_06_1997_Rudmanns-150x150.jpg;26.06.1997
+;Florian Schierhuber;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/4ae0e565-bc26-46bb-b7db-535f1db5f64b.jpg;24.04.1999
+;Johannes Jürgens;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/Johannes_Jürgens_070399.png;07.03.1999
+28;Daniel Ginter;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/28_10_1998_Daniel-Ginter.png;28.10.1998
+;Dominik Hofbauer;http://www.hobbyliga-zwettl.at/wp-content/uploads/2023/09/Dominik_Hofbauer_20011995.jpg;20.01.1995
+;Mahir Ramic*;http://www.hobbyliga-zwettl.at/wp-content/uploads/2024/03/Mahir_Ramic_12031997.png;12.03.1997
+;Nico Seemann;http://www.hobbyliga-zwettl.at/wp-content/uploads/2024/03/Nico_Seemann_20082010.png;20.08.2010
+;Florian Schmid;http://www.hobbyliga-zwettl.at/wp-content/uploads/2024/07/Image-Photoroom.png;06.08.2009
+;Ali Rezai;http://www.hobbyliga-zwettl.at/wp-content/uploads/2025/03/IMG_8888-Photoroom.png;01.01.2002
+;Luca Brunner;http://www.hobbyliga-zwettl.at/wp-content/uploads/2025/03/IMG_8888-Photoroom-1.png;13.11.2008
+;Jakob Allinger;http://www.hobbyliga-zwettl.at/wp-content/uploads/2015/07/Allinger_Jakob-e1437919271875.jpg;15.10.1992
+;Florian Mayer;http://www.hobbyliga-zwettl.at/wp-content/uploads/2015/07/Mayer_Florian-e1437919325748.jpg;23.09.2000
+;Markus Houschko;http://www.hobbyliga-zwettl.at/wp-content/uploads/2015/07/Houscho_Markus-e1437919284745.jpg;04.08.1981
+;Markus Tretzmüller;http://www.hobbyliga-zwettl.at/wp-content/uploads/2015/07/Tretzmüller_Markus-e1437919373248.jpg;09.11.1992
+;Christoph Vogl;http://www.hobbyliga-zwettl.at/wp-content/uploads/2015/07/Vogl_Christoph-e1437919379722.jpg;10.09.1992
+;Bernhard Tretzmüller;http://www.hobbyliga-zwettl.at/wp-content/uploads/2015/07/Tretzmüller_Bernhard-e1437919367967.jpg;24.08.1994
+;Markus Wagesreiter;http://www.hobbyliga-zwettl.at/wp-content/uploads/2015/07/Wagesreiter_Markus-e1437919390814.jpg;31.12.1986
+;Jakob Wagner;http://www.hobbyliga-zwettl.at/wp-content/uploads/2015/07/Wagner_Jakob-e1437919396738.jpg;19.01.1993
+;Jakob Kainz;http://www.hobbyliga-zwettl.at/wp-content/uploads/2015/07/Kainz-Jakob-e1437919291467.jpg;31.08.1995
+;Raphael Krammer;http://www.hobbyliga-zwettl.at/wp-content/uploads/2015/07/Krammer_Raphael-e1437919303395.jpg;02.09.1997
+02;Werner Wimmer;http://www.hobbyliga-zwettl.at/wp-content/uploads/2015/07/02_Wimmer_Werner-e1437919255600.jpg;15.07.1984
+;Florian Wandl;http://www.hobbyliga-zwettl.at/wp-content/uploads/2015/07/Wandl_Florian-e1437919407207.jpg;04.11.1982
+;Harald Fichtinger;http://www.hobbyliga-zwettl.at/wp-content/uploads/2017/08/Harald-Fichtinger19.9.1968.jpg;19.09.1968
+;Friedrich Rosenkranz;http://www.hobbyliga-zwettl.at/wp-content/uploads/2018/03/Friedrich_Rosenkranz_02061972.jpg;02.06.1972
+03;Peter Gell;http://www.hobbyliga-zwettl.at/wp-content/uploads/2015/07/03_Gell_Peter-e1437919262572.jpg;20.07.1967
+1;Michael Schindler;http://www.hobbyliga-zwettl.at/wp-content/uploads/2025/08/1_Spieler_Michael_Schindler.png;18.09.1984
+2;Samuel Neuninger;http://www.hobbyliga-zwettl.at/wp-content/uploads/2025/08/2_Spieler_Samuel_Neuninger.jpeg;29.06.2010
+;Roman Koppensteiner;http://www.hobbyliga-zwettl.at/wp-content/uploads/2026/01/RomanKoppensteiner_06122009.jpeg;06.12.2009
+;Nico Winter;http://www.hobbyliga-zwettl.at/wp-content/uploads/2026/01/Nico_Winter.jpg;11.01.2010
+;Julian Scheidl;http://www.hobbyliga-zwettl.at/wp-content/uploads/2026/01/Julian_Scheidl.jpg;10.09.2009
