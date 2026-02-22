@@ -1,0 +1,161 @@
+<!-- Header / Navigation -->
+<header class="site-header">
+  <div class="container">
+    <nav class="main-nav">
+      <!-- Logo -->
+      <a href="/" class="logo">
+        <img src="/assets/logo-su-rudmanns.svg" alt="SU Rudmanns" class="logo-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <span class="logo-text" style="display: none;">SU RUDMANNS</span>
+      </a>
+      
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-toggle" aria-label="Menü öffnen" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <!-- Navigation Links -->
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/" class="nav-link{% if page.url == '/' %} active{% endif %}">Home</a></li>
+        <li><a href="/team/" class="nav-link{% if page.url == '/team/' %} active{% endif %}">Team</a></li>
+        <li><a href="/blog/" class="nav-link{% if page.url == '/blog/' %} active{% endif %}">Blog</a></li>
+        <li><a href="/pfingstturnier/" class="nav-link{% if page.url == '/pfingstturnier/' %} active{% endif %}">Pfingstturnier</a></li>
+        <li><a href="/events/" class="nav-link{% if page.url == '/events/' %} active{% endif %}">Events</a></li>
+        <li><a href="/fanshop/" class="nav-link{% if page.url == '/fanshop/' %} active{% endif %}">Fanshop</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+.site-header {
+  background-color: var(--color-primary);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow-md);
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  color: var(--color-accent);
+  font-weight: 800;
+  font-size: var(--font-size-xl);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.logo-image {
+  height: 50px;
+  width: auto;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: var(--space-6);
+}
+
+.nav-link {
+  color: var(--color-accent);
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: var(--font-size-sm);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: rgba(255,255,255,0.2);
+  color: var(--color-accent);
+}
+
+/* Mobile Menu */
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-3);
+}
+
+.mobile-menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-accent);
+  border-radius: 2px;
+  transition: all var(--transition-fast);
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: var(--color-primary);
+    flex-direction: column;
+    padding: var(--space-4);
+    gap: var(--space-2);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .nav-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .nav-link {
+    display: block;
+    padding: var(--space-3);
+    text-align: center;
+  }
+}
+</style>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById('navMenu');
+  menu.classList.toggle('active');
+}
+
+// Schließe Menü bei Klick außerhalb
+document.addEventListener('click', function(e) {
+  const menu = document.getElementById('navMenu');
+  const toggle = document.querySelector('.mobile-menu-toggle');
+  if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+    menu.classList.remove('active');
+  }
+});
+</script>

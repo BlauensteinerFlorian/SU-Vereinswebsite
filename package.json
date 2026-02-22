@@ -1,0 +1,16 @@
+{
+  "name": "su-vereinswebsite",
+  "version": "1.0.0",
+  "description": "Sportunion Rudmanns Vereinswebsite",
+  "scripts": {
+    "dev": "eleventy --serve --watch",
+    "build": "eleventy",
+    "debug": "DEBUG=* eleventy"
+  },
+  "keywords": ["verein", "fussball", "website"],
+  "author": "Florian Blauensteiner",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

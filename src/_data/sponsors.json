@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Beispiel Sponsor 1",
+    "logo": "/assets/sponsors/sponsor1.svg",
+    "url": "https://example.com"
+  },
+  {
+    "name": "Beispiel Sponsor 2", 
+    "logo": "/assets/sponsors/sponsor2.svg",
+    "url": "https://example.com"
+  }
+]

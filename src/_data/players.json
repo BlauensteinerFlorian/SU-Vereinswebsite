@@ -1,0 +1,21 @@
+[
+  {"number": 1, "name": "Daniel Dangl", "image": "1_DANGL.png", "birthdate": "20.08.2000"},
+  {"number": 7, "name": "Sebastian Gretz", "image": "7_GRETZ.png", "birthdate": "24.01.2000"},
+  {"number": 5, "name": "Christoph Kirchner", "image": "5_KIRCHNER.png", "birthdate": "10.05.2001"},
+  {"number": 14, "name": "Jonathan Bobleter", "image": "14_BOBLETER.png", "birthdate": "26.10.2001"},
+  {"number": 15, "name": "Georg Schönhofer", "image": "15_SCHÖNHOFER.png", "birthdate": "11.01.2002"},
+  {"number": 11, "name": "Florian Blauensteiner", "image": "11_BLAUENSTEINER.png", "birthdate": "26.03.1999"},
+  {"number": 20, "name": "Raphael Garschall", "image": "20_GARSCHALL.png", "birthdate": "01.07.1992"},
+  {"number": 8, "name": "Christoph Paydal", "image": "8_PAYDAL.png", "birthdate": "12.04.2000"},
+  {"number": 69, "name": "Marco Zlabinger", "image": "69_Zlabinger.png", "birthdate": "04.05.2000"},
+  {"number": 99, "name": "Marcel Wagner", "image": "99_WAGNER.png", "birthdate": "20.01.1999"},
+  {"number": null, "name": "Benedikt Weissinger", "image": "X_WEISSINGER.png", "birthdate": "01.10.2000"},
+  {"number": 12, "name": "Markus Koppensteiner", "image": "12_KOPPENSTEINER.png", "birthdate": "03.03.2001"},
+  {"number": 13, "name": "Christian Omengue", "image": "13_OMENGUE.png", "birthdate": "25.05.1989"},
+  {"number": 19, "name": "Thomas Brenner", "image": "19_BRENNER.png", "birthdate": "16.04.2003"},
+  {"number": null, "name": "Lorenz Göschl", "image": "X_GÖSCHL.png", "birthdate": "01.07.2000"},
+  {"number": 10, "name": "David Lugauer", "image": "10_LUGAUER.png", "birthdate": "24.09.1998"},
+  {"number": 16, "name": "Alexander Leutgeb", "image": "16_LEUTGEB.png", "birthdate": "01.08.1993"},
+  {"number": 4, "name": "Pete Moyo", "image": "4_MOYO.png", "birthdate": "03.12.1987"},
+  {"number": null, "name": "Leo Steinkellner", "image": "X_STEINKELLNER.png", "birthdate": "06.10.2003"}
+]

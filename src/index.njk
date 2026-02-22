@@ -1,0 +1,551 @@
+---
+layout: base.njk
+title: Startseite
+description: Willkommen bei der Sportunion Rudmanns - Hobby-Liga-Fußballverein aus Stift Zwettl seit 1988.
+---
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-slider" id="heroSlider">
+    <div class="hero-slide active">
+      <div class="hero-image" style="background-image: url('/assets/hero/team-2024.jpg')"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">SU RUDMANNS</h1>
+        <p class="hero-subtitle">Hobby-Liga-Fußball aus Stift Zwettl seit 1988</p>
+        <div class="hero-buttons">
+          <a href="/team/" class="btn btn-primary">Mannschaft</a>
+          <a href="/blog/" class="btn btn-secondary">News</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slide">
+      <div class="hero-image" style="background-image: url('/assets/hero/pokal-2024.jpg')"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">POKALSIEG 2024</h1>
+        <p class="hero-subtitle">Ein historischer Erfolg für unseren Verein</p>
+        <a href="/blog/pokalsieg-2024/" class="btn btn-primary">Bericht lesen</a>
+      </div>
+    </div>
+    <div class="hero-slide">
+      <div class="hero-image" style="background-image: url('/assets/hero/pfingstturnier.jpg')"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">PFINGSTTURNIER</h1>
+        <p class="hero-subtitle">Jährliches Highlight für Hobby-Teams</p>
+        <a href="/pfingstturnier/" class="btn btn-primary">Mehr erfahren</a>
+      </div>
+    </div>
+    
+    <!-- Slider Controls -->
+    <button class="slider-btn slider-prev" onclick="changeSlide(-1)" aria-label="Vorheriges Bild">❮</button>
+    <button class="slider-btn slider-next" onclick="changeSlide(1)" aria-label="Nächstes Bild">❯</button>
+    <div class="slider-dots">
+      <span class="dot active" onclick="goToSlide(0)"></span>
+      <span class="dot" onclick="goToSlide(1)"></span>
+      <span class="dot" onclick="goToSlide(2)"></span>
+    </div>
+  </div>
+</section>
+
+<!-- Vereinsinfo Section -->
+<section class="section vereinsinfo">
+  <div class="container">
+    <div class="info-grid">
+      <div class="info-card">
+        <span class="info-number">1988</span>
+        <span class="info-label">Gründungsjahr</span>
+      </div>
+      <div class="info-card">
+        <span class="info-number">1</span>
+        <span class="info-label">Mannschaft</span>
+      </div>
+      <div class="info-card">
+        <span class="info-number">Serie H</span>
+        <span class="info-label">Liga</span>
+      </div>
+      <div class="info-card">
+        <span class="info-number">🏆</span>
+        <span class="info-label">Pokalsieg 2024</span>
+      </div>
+    </div>
+    
+    <div class="vereinsbeschreibung">
+      <h2 class="heading-2 text-center">Sportunion Rudmanns / Stift Zwettl</h2>
+      <p class="text-center" style="max-width: 800px; margin: 0 auto;">
+        Wir sind ein Hobby-Liga-Fußballverein aus Stift Zwettl mit einer leidenschaftlichen Mannschaft. 
+        Seit 1988 spielen wir erfolgreich in der Serie H und freuen uns über jeden Fan und Unterstützer.
+        Unsere Spielstätte ist das <strong>Birkenstadion</strong> in Stift Zwettl.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- News Section -->
+<section class="section section-sm news-section">
+  <div class="container">
+    <h2 class="heading-2 text-center mb-6">Aktuelle News</h2>
+    
+    <div class="news-grid">
+      {% for post in collections.posts %}
+      <article class="card news-card">
+        {% if post.data.image %}
+        <img src="{{ post.data.image }}" alt="{{ post.data.title }}" class="card-image">
+        {% else %}
+        <div class="card-image" style="background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">⚽</div>
+        {% endif %}
+        <div class="card-content">
+          <time class="news-date">{{ post.date | formatDate }}</time>
+          <h3 class="news-title">{{ post.data.title }}</h3>
+          <p class="news-excerpt">{{ post.data.excerpt }}</p>
+          <a href="{{ post.url }}" class="news-link">Weiterlesen →</a>
+        </div>
+      </article>
+      {% else %}
+      <!-- Beispiel-News wenn noch keine vorhanden -->
+      <article class="card news-card">
+        <div class="card-image" style="background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🏆</div>
+        <div class="card-content">
+          <time class="news-date">15. Juni 2024</time>
+          <h3 class="news-title">Pokalsieg 2024!</h3>
+          <p class="news-excerpt">Ein historischer Tag für unseren Verein. Wir haben den Pokal gewonnen!</p>
+          <a href="#" class="news-link">Weiterlesen →</a>
+        </div>
+      </article>
+      
+      <article class="card news-card">
+        <div class="card-image" style="background: linear-gradient(135deg, #333, #666); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">⚽</div>
+        <div class="card-content">
+          <time class="news-date">10. September 2024</time>
+          <h3 class="news-title">Saisonstart Serie H</h3>
+          <p class="news-excerpt">Die neue Saison beginnt. Hier ist unser Spielplan für die kommenden Monate.</p>
+          <a href="#" class="news-link">Weiterlesen →</a>
+        </div>
+      </article>
+      
+      <article class="card news-card">
+        <div class="card-image" style="background: linear-gradient(135deg, var(--color-primary), #ff8533); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🎉</div>
+        <div class="card-content">
+          <time class="news-date">1. Januar 2024</time>
+          <h3 class="news-title">Neue Website online</h3>
+          <p class="news-excerpt">Endlich ist es soweit - unsere neue Website ist live!</p>
+          <a href="#" class="news-link">Weiterlesen →</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    
+    <div class="text-center mt-6">
+      <a href="/blog/" class="btn btn-primary">Alle News</a>
+    </div>
+  </div>
+</section>
+
+<!-- Next Game Section -->
+<section class="section section-sm next-game">
+  <div class="container">
+    <div class="game-box">
+      <span class="game-label">Nächstes Spiel</span>
+      <div class="game-teams">
+        <span class="team-home">SU Rudmanns</span>
+        <span class="game-vs">VS</span>
+        <span class="team-away">Gegner (TBD)</span>
+      </div>
+      <div class="game-info">
+        <span>📅 Datum wird bekannt gegeben</span>
+        <span>🏟️ Birkenstadion</span>
+      </div>
+      <a href="/spielplan/" class="btn btn-secondary mt-4">Zum Spielplan</a>
+    </div>
+  </div>
+</section>
+
+<!-- Sponsoren Section -->
+<section class="section section-sm sponsors-section">
+  <div class="container">
+    <h2 class="heading-3 text-center mb-6">Unsere Sponsoren</h2>
+    <div class="sponsors-grid">
+      {% for sponsor in sponsors %}
+      <a href="{{ sponsor.url }}" target="_blank" rel="noopener" class="sponsor-logo">
+        <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}" loading="lazy">
+      </a>
+      {% else %}
+      <!-- Beispiel-Sponsoren -->
+      <div class="sponsor-logo placeholder">
+        <span>Hauptsponsor</span>
+      </div>
+      <div class="sponsor-logo placeholder">
+        <span>Partner 1</span>
+      </div>
+      <div class="sponsor-logo placeholder">
+        <span>Partner 2</span>
+      </div>
+      <div class="sponsor-logo placeholder">
+        <span>Partner 3</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<style>
+/* Hero Slider */
+.hero {
+  position: relative;
+  height: 70vh;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+.hero-slider {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.hero-slide.active {
+  opacity: 1;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  padding: 0 var(--space-4);
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 900;
+  letter-spacing: 4px;
+  margin-bottom: var(--space-4);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-subtitle {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-6);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Slider Controls */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,102,0,0.8);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+  z-index: 3;
+}
+
+.slider-btn:hover {
+  background: var(--color-primary);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.slider-prev { left: var(--space-4); }
+.slider-next { right: var(--space-4); }
+
+.slider-dots {
+  position: absolute;
+  bottom: var(--space-4);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: var(--space-2);
+  z-index: 3;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: rgba(255,255,255,0.5);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.dot.active,
+.dot:hover {
+  background: var(--color-primary);
+}
+
+/* Vereinsinfo */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+  margin-bottom: var(--space-10);
+}
+
+.info-card {
+  background: var(--bg-card);
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  border-left: 4px solid var(--color-primary);
+}
+
+.info-number {
+  display: block;
+  font-size: var(--font-size-3xl);
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: var(--space-2);
+}
+
+.info-label {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* News */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.news-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-date {
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  margin-bottom: var(--space-2);
+}
+
+.news-title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  margin-bottom: var(--space-3);
+  color: var(--text-primary);
+}
+
+.news-excerpt {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-4);
+  flex-grow: 1;
+}
+
+.news-link {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* Next Game */
+.next-game {
+  background: var(--bg-secondary);
+}
+
+.game-box {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 2px solid var(--color-primary);
+}
+
+.game-label {
+  color: var(--color-primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: var(--font-size-sm);
+}
+
+.game-teams {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  margin: var(--space-6) 0;
+  flex-wrap: wrap;
+}
+
+.team-home,
+.team-away {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+}
+
+.game-vs {
+  background: var(--color-primary);
+  color: white;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-md);
+  font-weight: 700;
+}
+
+.game-info {
+  display: flex;
+  gap: var(--space-6);
+  justify-content: center;
+  color: var(--text-secondary);
+  flex-wrap: wrap;
+}
+
+/* Sponsoren */
+.sponsors-section {
+  background: var(--bg-secondary);
+}
+
+.sponsors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--space-6);
+  align-items: center;
+}
+
+.sponsor-logo {
+  background: var(--bg-card);
+  padding: var(--space-6);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  transition: all var(--transition-fast);
+}
+
+.sponsor-logo:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.sponsor-logo img {
+  max-height: 60px;
+  width: auto;
+  filter: grayscale(100%);
+  transition: filter var(--transition-fast);
+}
+
+.sponsor-logo:hover img {
+  filter: grayscale(0%);
+}
+
+.sponsor-logo.placeholder {
+  background: var(--bg-card);
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+    min-height: 400px;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .slider-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .game-teams {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+}
+</style>
+
+<script>
+// Hero Slider
+let currentSlide = 0;
+const slides = document.querySelectorAll('.hero-slide');
+const dots = document.querySelectorAll('.dot');
+const totalSlides = slides.length;
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+  });
+  dots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === index);
+  });
+}
+
+function changeSlide(direction) {
+  currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+  showSlide(currentSlide);
+}
+
+function goToSlide(index) {
+  currentSlide = index;
+  showSlide(currentSlide);
+}
+
+// Auto-play
+setInterval(() => {
+  changeSlide(1);
+}, 5000);
+</script>
