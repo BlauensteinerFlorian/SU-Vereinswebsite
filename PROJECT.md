@@ -145,7 +145,8 @@ Basierend auf dem Fragebogen (ausstehend):
 
 ### Deployment
 - **Ziel-Server:** SFTP (Zugangsdaten in `.env`)
-- **Deploy-Script:** `scripts/deploy.py`
+- **Deploy-Ordner:** `demo-suwebsite/` (NICHT root!)
+- **Deploy-Script:** `scripts/deploy.py` (mit Projekt-spezifischem Ziel)
 
 ### Referenzen
 - **Ähnliche Projekte:** Sportunion-Websites (zur Inspiration)
