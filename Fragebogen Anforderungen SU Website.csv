@@ -1,0 +1,51 @@
+Kategorie;Frage;Typ;Hinweise;Antwort
+Allgemein;Wie heißt der Verein (offizieller Name)?;Text;Vollständiger Name;SU Rudmanns / Stift Zwettl
+Allgemein;In welchem Ort ist der Verein ansässig?;Text;Vereinssitz;Birkenstadion, Stift Zwettl
+Allgemein;Wann wurde der Verein gegründet?;Jahr;z.B. 1985;1988
+Allgemein;Wie viele aktive Mannschaften habt ihr?;Text;1 / 2 / 3-5 / Mehr als 5;1
+Allgemein;In welchen Ligen spielt ihr?;Text;z.B. 2. Landesliga, Bezirksliga;Serie H
+Allgemein;Gibt es eine Jugendabteilung?;Ja/Nein;Ja / Nein;Nein
+Design;Primärfarbe (Hex-Code oder Name);Farbe;z.B. #FF0000 oder Rot;
+Design;Sekundärfarbe (Hex-Code oder Name);Farbe;;
+Design;Akzentfarbe (Hex-Code oder Name);Farbe;;
+Design;Gibt es ein Vereinslogo?;Datei;Ja (bitte anhängen) / Nein / In Bearbeitung;
+Design;Wie soll das Design wirken?;Text;Modern / Traditionell / Dynamisch / Einfach;
+Design;Habt ihr Referenz-Websites?;Text;URLs von Websites die euch gefallen;
+Module;Soll es einen News-/Blog-Bereich geben?;Ja/Nein;Ja / Nein;
+Module;Soll eine Mannschaftsübersicht vorhanden sein?;Ja/Nein;Ja / Nein;
+Module;Sollen Spieler-Portraits gezeigt werden?;Ja/Nein;Ja / Nein;
+Module;Sollen Trainer und Betreuer vorgestellt werden?;Ja/Nein;Ja / Nein;
+Module;Soll ein Spielplan mit Terminen angezeigt werden?;Ja/Nein;Ja / Nein;
+Module;Sollen aktuelle Spielergebnisse angezeigt werden?;Ja/Nein;Ja / Nein;
+Module;Soll eine Tabelle der Liga angezeigt werden?;Ja/Nein;Ja / Nein;
+Module;Soll es eine Vereinsgeschichte geben?;Ja/Nein;Ja / Nein;
+Module;Soll der Vorstand vorgestellt werden?;Ja/Nein;Ja / Nein;
+Module;Sollen Ansprechpartner aufgelistet werden?;Ja/Nein;Ja / Nein;
+Module;Sollen Trainingszeiten angezeigt werden?;Ja/Nein;Ja / Nein;
+Module;Soll es einen Bereich für die Spielstätte geben?;Ja/Nein;Ja / Nein;
+Module;Soll es eine Fotogalerie geben?;Ja/Nein;Ja / Nein;
+Module;Sollen Sponsoren prominent angezeigt werden?;Text;Sehr wichtig / Normal / Nein;
+Module;Gibt es Sponsoren-Kategorien?;Text;z.B. Hauptsponsor, Premiumpartner;
+Module;Soll es eine Mitgliedschaftsanmeldung geben?;Ja/Nein;Ja / Nein;
+Module;Sollen aktuelle Events beworben werden?;Ja/Nein;Ja / Nein;
+Module;Soll es einen Fan-Shop geben?;Ja/Nein;Ja / Nein;
+Module;Sollen Social-Media-Feeds integriert werden?;Mehrfach;Facebook / Instagram / YouTube / TikTok / Keine;
+Funktionen;Soll es einen internen/geschützten Bereich geben?;Ja/Nein;Ja / Nein;
+Funktionen;Für wen ist der geschützte Bereich?;Text;Mitglieder / Spieler / Vorstand;
+Funktionen;Soll ein Kontaktformular vorhanden sein?;Ja/Nein;Ja / Nein;
+Funktionen;Wer pflegt später die Inhalte?;Text;Name und Kontaktdaten;
+Funktionen;Wie oft sollen Inhalte aktualisiert werden?;Text;Täglich / Wöchentlich / Nach Bedarf;
+Materialien;Welche Materialien könnt ihr liefern?;Text;Texte / Fotos / Logo / Sponsorenlogos / Satzung / Historische Daten;
+Materialien;Gibt es besondere Erfolge/Titel?;Text;Meisterschaften, Pokalsiege etc.;
+Materialien;Gibt es prominente Mitglieder/Ehemalige?;Text;Bekannte Spieler, Trainer etc.;
+Zeitplan;Wann soll die Website live gehen?;Datum;Wunschtermin;
+Zeitplan;Ist der Termin flexibel?;Ja/Nein;Ja / Nein;
+Zeitplan;Gibt es einen Budget-Rahmen?;Text;Optional;
+Sonstiges;Besondere Wünsche oder Anforderungen?;Text;;
+Sonstiges;Was darf auf keinen Fall fehlen?;Text;;
+Sonstiges;Was soll auf keinen Fall passieren?;Text;;
+Kontakt;Name des Ansprechpartners;Text;;
+Kontakt;Funktion im Verein;Text;;
+Kontakt;E-Mail;E-Mail;;
+Kontakt;Telefon;Text;;
+Kontakt;Datum der Ausfüllung;Datum;;
