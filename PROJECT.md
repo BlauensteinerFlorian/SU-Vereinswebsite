@@ -37,12 +37,14 @@ Entwicklung einer modernen, professionellen Website für den Hobby-Liga-Fußball
 - Informationen sind verteilt und nicht zentralisiert
 
 ### Stakeholder
-| Name / Gruppe | Rolle | Kontakt | Verantwortlichkeit |
-|---------------|-------|---------|-------------------|
-| Sportunion Rudmanns | Auftraggeber | sportunionrudmanns@gmail.com | Inhalte, Freigaben |
-| Alexander | Werbeprofi | alexander@werbeprofi.at | Design-Beratung |
-| Jonathan | Unterstützung | jonathan.bobleter@gmail.com | Koordination |
-| Florian Blauensteiner | Projektleiter / Developer | florian@blauensteiner.io | Umsetzung |
+Details siehe `STAKEHOLDER.md` (lokal, nicht im Git).
+
+| Kürzel | Rolle | Verantwortlichkeit |
+|--------|-------|-------------------|
+| SU | Auftraggeber (Verein) | Inhalte, Freigaben |
+| A-er | Werbeprofi | Design-Beratung |
+| J-er | Unterstützung | Koordination |
+| F-er | Projektleiter / Developer | Umsetzung |
 
 ### Technische Rahmenbedingungen
 - **Hosting:** SFTP-Webspace (IONOS/1&1)
