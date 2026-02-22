@@ -337,3 +337,167 @@ Basierend auf dem ausgefüllten Fragebogen vom 22.02.2026.
 
 *Erstellt am: 22.02.2026*  
 *Autor: Jarvis (AI Assistant)*
+
+---
+
+## US-021: Header mit Navigation
+
+**Als** Besucher  
+**möchte ich** eine klare Navigation haben  
+**damit** ich alle Seiten finden kann.
+
+### Akzeptanzkriterien
+- [ ] Orangener Header (Vereinsfarbe #FF6600)
+- [ ] Menüpunkte: Home, Team, Blog, Pfingsturnier, Events, Fanshop
+- [ ] Mobile-responsive (Hamburger-Menü)
+- [ ] Aktive Seite visuell hervorgehoben
+
+### Priorität: Hoch (MVP)
+
+---
+
+## US-022: Hero Slider
+
+**Als** Besucher  
+**möchte ich** ansprechende Bilder sehen  
+**damit** die Website professionell wirkt.
+
+### Akzeptanzkriterien
+- [ ] Großes Slider-Bild oben (Home & Team)
+- [ ] Automatisches Rotieren (optional)
+- [ ] Manuelle Steuerung (Pfeile/Punkte)
+- [ ] Responsive Bilder (Mobile/Desktop)
+
+### Priorität: Hoch (MVP)
+
+---
+
+## US-023: Sponsoren-Section
+
+**Als** Sponsor  
+**möchte ich** prominent platziert werden  
+**damit** meine Unterstützung sichtbar ist.
+
+### Akzeptanzkriterien
+- [ ] Auf jeder Seite unter dem Content
+- [ ] Logo-Grid oder Slider
+- [ ] Verlinkung zu Sponsoren-Websites
+- [ ] Responsive Darstellung
+
+### Priorität: Hoch (MVP)
+
+---
+
+## US-024: Footer mit Karte
+
+**Als** Besucher  
+**möchte ich** den Standort finden  
+**damit** ich zum Stadion komme.
+
+### Akzeptanzkriterien
+- [ ] Karten-Einbettung (Birkenstadion, Stift Zwettl)
+- [ ] Social Media Links (Instagram, Facebook)
+- [ ] Link zu Impressum
+- [ ] Responsive (Mobile: untereinander, Desktop: nebeneinander)
+
+### Priorität: Hoch (MVP)
+
+---
+
+## US-025: Team-Seite mit Spieler-Grid
+
+**Als** Fan  
+**möchte ich** alle Spieler sehen  
+**damit** ich die Mannschaft kenne.
+
+### Akzeptanzkriterien
+- [ ] Grid-Layout: Bild, Name, Geburtsdatum
+- [ ] Alle 74 Spieler aus CSV-Daten
+- [ ] Responsive (Mobile: 1-2 Spalten, Desktop: 3-4 Spalten)
+- [ ] Bilder aus data/player_images/
+
+### Priorität: Hoch (MVP)
+
+---
+
+## US-026: Blog mit Detailseiten
+
+**Als** Besucher  
+**möchte ich** Artikel lesen und teilen  
+**damit** ich informiert bin.
+
+### Akzeptanzkriterien
+- [ ] Übersichtsseite mit Artikel-Vorschau
+- [ ] Detailseite pro Artikel
+- [ ] Social Share Buttons (Facebook, X, WhatsApp)
+- [ ] CMS-fähig (einfache Pflege)
+
+### Priorität: Mittel (Phase 2)
+
+---
+
+## US-027: Pfingsturnier-Countdown
+
+**Als** Interessent  
+**möchte ich** sehen wie lange es noch dauert  
+**damit** ich mich vorbereiten kann.
+
+### Akzeptanzkriterien
+- [ ] Großer Countdown (Tage, Stunden, Minuten, Sekunden)
+- [ ] Ziel: Pfingstsonntag (jährlich)
+- [ ] Automatischer Reset nach Turnier
+- [ ] Visuell ansprechend
+
+### Priorität: Mittel (Phase 2)
+
+---
+
+## US-028: Turnier-Anmeldeformular
+
+**Als** Team  
+**möchte ich** mich online anmelden  
+**damit** wir am Turnier teilnehmen können.
+
+### Akzeptanzkriterien
+- [ ] Pflichtfelder: Teamname, Nachricht, E-Mail
+- [ ] Optional: Telefonnummer
+- [ ] Absenden-Button
+- [ ] E-Mail-Benachrichtigung an Verein
+
+### Priorität: Mittel (Phase 2)
+
+---
+
+## US-029: Events-Seite
+
+**Als** Vereinsmitglied  
+**möchte ich** kommende Veranstaltungen sehen  
+**damit** ich teilnehmen kann.
+
+### Akzeptanzkriterien
+- [ ] Event-Liste mit Datum und Details
+- [ ] Veranstaltungskalender
+- [ ] Einfache Pflege
+
+### Priorität: Niedrig (Phase 2)
+
+---
+
+## US-030: Fanshop
+
+**Als** Fan  
+**möchte ich** Vereins-Artikel kaufen  
+**damit** ich Fan-Merchandise erhalte.
+
+### Akzeptanzkriterien
+- [ ] Artikel-Übersicht mit Bildern
+- [ ] Preisanzeige
+- [ ] Bestellmöglichkeit (oder Weiterleitung)
+
+### Priorität: Niedrig (Phase 2)
+
+---
+
+*Dokument erstellt am: 22.02.2026*  
+*Autor: Jarvis (AI Assistant)*
+*Letzte Aktualisierung: 22.02.2026 (30 User Stories)*
