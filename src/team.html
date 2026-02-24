@@ -14,25 +14,32 @@
 <body>
   <div class="page-wrapper">
     <header class="site-header">
-      <div class="container">
-        <nav class="main-nav">
-          <a href="/" class="logo">
-            <img src="/assets/logo-su-rudmanns.svg" alt="SU Rudmanns" class="logo-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-            <span class="logo-text" style="display: none;">SU RUDMANNS</span>
-          </a>
-          <button class="mobile-menu-toggle" aria-label="Menü öffnen" onclick="toggleMenu()">
-            <span></span><span></span><span></span>
-          </button>
-          <ul class="nav-menu" id="navMenu">
-            <li><a href="/team/" class="nav-link active">Team</a></li>
-            <li><a href="/vorstand/" class="nav-link">Vorstand</a></li>
-            <li><a href="/pfingstturnier/" class="nav-link">Pfingstturnier</a></li>
-            <li><a href="/events/" class="nav-link">Events</a></li>
-            <li><a href="/fanshop/" class="nav-link">Fanshop</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <div class="container">
+    <nav class="main-nav">
+      <!-- Logo -->
+      <a href="/" class="logo">
+        <img src="/assets/logo-su-rudmanns.svg" alt="SU Rudmanns" class="logo-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <span class="logo-text" style="display: none;">SU RUDMANNS</span>
+      </a>
+      
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-toggle" aria-label="Menü öffnen" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+            <!-- Navigation Links -->
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/team/" class="nav-link active">Team</a></li>
+        <li><a href="/vorstand/" class="nav-link">Vorstand</a></li>
+        <li><a href="/pfingstturnier/" class="nav-link">Pfingstturnier</a></li>
+        <li><a href="/events/" class="nav-link">Events</a></li>
+        <li><a href="/fanshop/" class="nav-link">Fanshop</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
     <main class="main-content">
       <section class="section">
