@@ -142,6 +142,94 @@ description: Willkommen bei der Sportunion Rudmanns - Hobby-Liga-Fußballverein 
   </div>
 </section>
 
+<!-- Instagram Feed Section -->
+<section class="section section-sm instagram-section">
+  <div class="container">
+    <h2 class="heading-2 text-center mb-4">Instagram</h2>
+    <p class="text-center text-secondary mb-6" style="font-size: var(--font-size-lg);">
+      <a href="/instagram/" class="instagram-link">@surudmanns</a>
+    </p>
+
+    <div class="instagram-grid">
+      <!-- Post 1 -->
+      <article class="instagram-post">
+        <div class="instagram-image-wrapper">
+          <img src="/assets/instagram/post-1.jpg" alt="Torschützenkönig" class="instagram-image">
+          <div class="instagram-overlay">
+            <a href="/instagram/" class="instagram-view-btn">
+              Mehr ansehen
+            </a>
+          </div>
+        </div>
+        <div class="instagram-content">
+          <time class="instagram-date">08. Februar 2026</time>
+          <p class="instagram-caption">
+            𝑩𝑨𝑴, 𝑩𝑨𝑴, 𝑩𝑨𝑴, 𝑩𝑨𝑴 💥 Am Hallentitel hauchdünn vorbeigeschrammt – Torschützenkönig gesichert! ☑️ #SU #NurDieSU #SUpportMeister #SUnendlich
+          </p>
+        </div>
+      </article>
+
+      <!-- Post 2 -->
+      <article class="instagram-post">
+        <div class="instagram-image-wrapper">
+          <img src="/assets/instagram/post-2.jpg" alt="2. Platz Hallenturnier" class="instagram-image">
+          <div class="instagram-overlay">
+            <a href="/instagram/" class="instagram-view-btn">
+              Mehr ansehen
+            </a>
+          </div>
+        </div>
+        <div class="instagram-content">
+          <time class="instagram-date">08. Februar 2026</time>
+          <p class="instagram-caption">
+            Solide Mannschaftsleistung – solides Ergebnis! 💪 #SU #NurDieSU #SUpportMeister #SUnendlich
+          </p>
+        </div>
+      </article>
+
+      <!-- Post 3 -->
+      <article class="instagram-post">
+        <div class="instagram-image-wrapper">
+          <img src="/assets/instagram/post-3.jpg" alt="Matchday Hallenturnier" class="instagram-image">
+          <div class="instagram-overlay">
+            <a href="/instagram/" class="instagram-view-btn">
+              Mehr ansehen
+            </a>
+          </div>
+        </div>
+        <div class="instagram-content">
+          <time class="instagram-date">07. Februar 2026</time>
+          <p class="instagram-caption">
+            𝑻𝒖𝒓𝒏𝒊𝒆𝒓𝒕𝒂𝒈. 🔖 ⏩ Spielplan 🎫 Serie H Hallenturnier 🗓 Samstag, 07.02.2026 🕕 Anpfiff: ab 13:00 Uhr 🏟 Sporthalle Zwettl, Zwettl #SU #NurDieSU #SUpportMeister #SUnendlich
+          </p>
+        </div>
+      </article>
+
+      <!-- Post 4 -->
+      <article class="instagram-post">
+        <div class="instagram-image-wrapper">
+          <img src="/assets/instagram/post-4.jpg" alt="Mission Titelverteidigung" class="instagram-image">
+          <div class="instagram-overlay">
+            <a href="/instagram/" class="instagram-view-btn">
+              Mehr ansehen
+            </a>
+          </div>
+        </div>
+        <div class="instagram-content">
+          <time class="instagram-date">02. Februar 2026</time>
+          <p class="instagram-caption">
+            Mission Titelverteidigung 🏆 🎫 Serie H Hallenturnier 🗓 Samstag, 07.02.2026 🕕 Anpfiff: ab 13:00 Uhr 🏟 Sporthalle Zwettl, Zwettl #SU #NurDieSU #SUpportMeister #SUnendlich
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <div class="text-center mt-6">
+      <a href="/instagram/" class="btn btn-secondary">Alle Posts ansehen</a>
+    </div>
+  </div>
+</section>
+
 <!-- Next Game Section -->
 <section class="section section-sm next-game">
   <div class="container">
@@ -441,6 +529,111 @@ description: Willkommen bei der Sportunion Rudmanns - Hobby-Liga-Fußballverein 
   flex-wrap: wrap;
 }
 
+/* Instagram Feed on Homepage */
+.instagram-section {
+  background: var(--bg-secondary);
+}
+
+.instagram-link {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.instagram-link:hover {
+  opacity: 0.8;
+}
+
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.instagram-post {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.instagram-post:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.instagram-image-wrapper {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.instagram-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.instagram-post:hover .instagram-image {
+  transform: scale(1.05);
+}
+
+.instagram-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.instagram-post:hover .instagram-overlay {
+  opacity: 1;
+}
+
+.instagram-view-btn {
+  background: var(--color-primary);
+  color: white;
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.instagram-view-btn:hover {
+  background: white;
+  color: var(--color-primary);
+}
+
+.instagram-content {
+  padding: var(--space-4);
+}
+
+.instagram-date {
+  display: block;
+  color: var(--text-muted);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-2);
+}
+
+.instagram-caption {
+  color: var(--text-primary);
+  font-size: var(--font-size-sm);
+  line-height: 1.5;
+  margin: 0;
+}
+
 /* Sponsoren */
 .sponsors-section {
   background: var(--bg-secondary);
@@ -505,15 +698,37 @@ description: Willkommen bei der Sportunion Rudmanns - Hobby-Liga-Fußballverein 
   
   .info-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3);
+  }
+  
+  .info-card {
+    padding: var(--space-4);
   }
   
   .news-grid {
     grid-template-columns: 1fr;
   }
   
+  .instagram-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+  
   .game-teams {
     flex-direction: column;
     gap: var(--space-2);
+  }
+}
+
+@media (max-width: 480px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    margin: 0 auto var(--space-8);
+  }
+  
+  .instagram-grid {
+    grid-template-columns: 1fr;
   }
 }
 </style>
