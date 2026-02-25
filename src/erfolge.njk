@@ -1,0 +1,100 @@
+---
+layout: base.njk
+title: Erfolge
+description: Die Erfolge und Titel der Sportunion Rudmanns.
+---
+
+<section class="section">
+  <div class="container">
+    <h1 class="heading-1 text-center mb-8">Unsere Erfolge</h1>
+    
+    <div class="erfolge-timeline">
+      <article class="erfolge-item">
+        <span class="erfolge-year">2024</span>
+        <div class="erfolge-content">
+          <h3>Pokalsieg</h3>
+          <p>Historischer Pokalsieg für unseren Verein.</p>
+        </div>
+      </article>
+      
+      <article class="erfolge-item">
+        <span class="erfolge-year">2023</span>
+        <div class="erfolge-content">
+          <h3>Hallenturnier Serie H</h3>
+          <p>Platzierung bei der Hallenmeisterschaft.</p>
+        </div>
+      </article>
+    </div>
+    
+    <!-- Bekannte Mitglieder Section -->
+    <h2 class="heading-2 text-center mt-12 mb-6">Bekannte Mitglieder</h2>
+    <div class="bekannte-grid">
+      <article class="bekannte-card">
+        <div class="bekannte-info">
+          <h3>Max Mustermann</h3>
+          <p>Vereinslegende und langjähriger Kapitän</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+.erfolge-timeline {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.erfolge-item {
+  display: flex;
+  gap: var(--space-6);
+  padding: var(--space-6);
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-4);
+  border-left: 4px solid var(--color-primary);
+}
+
+.erfolge-year {
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  color: var(--color-primary);
+  min-width: 80px;
+}
+
+.erfolge-content h3 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-2);
+}
+
+.erfolge-content p {
+  color: var(--text-secondary);
+}
+
+.bekannte-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-6);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.bekannte-card {
+  background: var(--bg-card);
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.bekannte-card h3 {
+  color: var(--color-primary);
+  margin-bottom: var(--space-2);
+}
+
+@media (max-width: 640px) {
+  .erfolge-item {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+}
+</style>

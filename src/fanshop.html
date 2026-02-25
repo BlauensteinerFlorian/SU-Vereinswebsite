@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fanshop der Sportunion Rudmanns - Offizieller Merchandise">
+  <meta name="theme-color" content="#FF6600">
+  <title>Fanshop | SU Rudmanns</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .shop-container {
+      width: 100%;
+      height: calc(100vh - 140px);
+      min-height: 600px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="site-header">
+      <div class="container">
+        <nav class="main-nav">
+          <a href="/" class="logo"> <span class="logo-text">SU RUDMANNS</span>
+            
+            
+          </a>
+          <button class="mobile-menu-toggle" aria-label="Menü öffnen" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+          </button>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="/team/" class="nav-link">Team</a></li>
+            <li><a href="/vorstand/" class="nav-link">Vorstand</a></li>
+            <li><a href="/pfingstturnier/" class="nav-link">Pfingstturnier</a></li>
+            <li><a href="/events/" class="nav-link">Events</a></li>
+            <li><a href="/fanshop/" class="nav-link active">Fanshop</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <iframe 
+        src="https://www.w4merch.at/shop/su-rudmanns/"
+        class="shop-container"
+        title="SU Rudmanns Fanshop">
+      </iframe>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-section">
+            <h3 class="footer-heading">Sportunion Rudmanns</h3>
+            <address class="footer-address">
+              <p>Birkenstadion</p>
+              <p>Stift Zwettl</p>
+              <p>Österreich</p>
+            </address>
+          </div class="footer-section">
+            <h3 class="footer-heading">Links</h3>
+            <ul class="footer-links">
+              <li><a href="/blog/">Blog</a></li>
+              <li><a href="/galerie/">Galerie</a></li>
+              <li><a href="/spielstaette/">Spielstätte</a></li>
+              <li><a href="/ansprechpartner/">Ansprechpartner</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-heading">Folge uns</h3>
+            <div class="social-links">
+              <a href="https://instagram.com/surudmanns" target="_blank" class="social-link">📷</a>
+              <a href="https://facebook.com/surudmanns" target="_blank" class="social-link">📘</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Sportunion Rudmanns. Alle Rechte vorbehalten.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    function toggleMenu() { document.getElementById('navMenu').classList.toggle('active'); }
+  </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+---
+layout: base.njk
+title: Galerie
+description: Bilder und Impressionen der Sportunion Rudmanns.
+---
+
+<section class="section">
+  <div class="container">
+    <h1 class="heading-1 text-center mb-8">Galerie</h1>
+    
+    <div class="galerie-grid">
+      <div class="galerie-placeholder">
+        <p>Hier werden bald Bilder aus dem Vereinsleben zu sehen sein.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.galerie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-4);
+}
+
+.galerie-placeholder {
+  background: var(--bg-card);
+  aspect-ratio: 4/3;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  font-size: var(--font-size-lg);
+  grid-column: 1 / -1;
+  border: 2px dashed var(--bg-card);
+}
+</style>

@@ -1,0 +1,104 @@
+---
+layout: base.njk
+title: Pfingstturnier
+description: Das jährliche Pfingstturnier der Sportunion Rudmanns.
+---
+
+<section class="section">
+  <div class="container">
+    <h1 class="heading-1 text-center mb-4">Pfingstturnier</h1>
+    <p class="text-center text-secondary mb-8">Das Highlight für Hobby-Teams</p>
+    
+    <div class="pfingstturnier-content">
+      <article class="info-card">
+        <h2>Über das Turnier</h2>
+        <p>Jedes Jahr an Pfingsten veranstalten wir unser beliebtes Turnier für Hobby-Mannschaften. Ein Wochenende voller Fußball, Spaß und guter Stimmung erwartet die teilnehmenden Teams.</p>
+      </article>
+      
+      <div class="info-grid">
+        <article class="info-box">
+          <h3>🗓 Termin</h3>
+          <p>Pfingstwochenende</p>
+        </article>
+        
+        <article class="info-box">
+          <h3>📍 Ort</h3>
+          <p>Birkenstadion, Stift Zwettl</p>
+        </article>
+        
+        <article class="info-box">
+          <h3>👥 Teams</h3>
+          <p>Hobby-Mannschaften</p>
+        </article>
+        
+        <article class="info-box">
+          <h3>🏆 Preise</h3>
+          <p>Attraktive Preise für die Besten</p>
+        </article>
+      </div>
+      
+      <article class="info-card mt-8">
+        <h2>Anmeldung</h2>
+        <p>Interessierte Teams können sich über unsere Kontaktseite anmelden. Die Plätze sind begrenzt - also schnell sein!</p>
+        <a href="mailto:sportunionrudmanns@gmail.com" class="btn btn-primary mt-4">Zur Anmeldung</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+.pfingstturnier-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.info-card {
+  background: var(--bg-card);
+  padding: var(--space-8);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-6);
+}
+
+.info-card h2 {
+  color: var(--color-primary);
+  margin-bottom: var(--space-4);
+}
+
+.info-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+
+.info-box {
+  background: var(--bg-card);
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  border-left: 4px solid var(--color-primary);
+}
+
+.info-box h3 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-2);
+}
+
+.info-box p {
+  color: var(--text-secondary);
+}
+
+.mt-8 {
+  margin-top: var(--space-8);
+}
+
+@media (max-width: 640px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>

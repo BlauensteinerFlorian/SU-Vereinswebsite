@@ -1,0 +1,92 @@
+---
+layout: base.njk
+title: Spielstätte
+description: Das Birkenstadion in Stift Zwettl - Heimat der Sportunion Rudmanns.
+---
+
+<section class="section">
+  <div class="container">
+    <h1 class="heading-1 text-center mb-8">Unsere Spielstätte</h1>
+    
+    <div class="spielstaette-grid">
+      <div class="spielstaette-info">
+        <h2>Birkenstadion</h2>
+        <address>
+          <p>Stift Zwettl</p>
+          <p>Österreich</p>
+        </address>
+        
+        <h3>Anfahrt</h3>
+        <p>Das Stadion ist gut mit dem Auto erreichbar. Parkplätze stehen direkt vor Ort zur Verfügung.</p>
+        
+        <h3>Einrichtungen</h3>
+        <ul class="einrichtungen-list">
+          <li>⚽ Kunstrasenplatz</li>
+          <li>🚿 Umkleidekabinen</li>
+          <li>🍻 Vereinsheim</li>
+          <li>🅿️ Parkplätze</li>
+        </ul>
+      </div>
+      
+      <div class="spielstaette-map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2680.0!2d15.2!3d48.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDM2JzAwLjAiTiAxNcKwMTInMDAuMCJF!5e0!3m2!1sde!2sat!4v1600000000000!5m2!1sde!2sat"
+          width="100%" 
+          height="400" 
+          style="border:0; border-radius: var(--radius-lg);"
+          allowfullscreen="" 
+          loading="lazy"
+          title="Birkenstadion Stift Zwettl">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.spielstaette-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.spielstaette-info h2 {
+  font-size: var(--font-size-3xl);
+  color: var(--color-primary);
+  margin-bottom: var(--space-4);
+}
+
+.spielstaette-info h3 {
+  font-size: var(--font-size-xl);
+  margin: var(--space-6) 0 var(--space-3);
+}
+
+.spielstaette-info address {
+  font-style: normal;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-6);
+}
+
+.spielstaette-info p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.einrichtungen-list {
+  list-style: none;
+  display: grid;
+  gap: var(--space-3);
+}
+
+.einrichtungen-list li {
+  font-size: var(--font-size-lg);
+}
+
+@media (max-width: 768px) {
+  .spielstaette-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>

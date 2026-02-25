@@ -1,0 +1,61 @@
+---
+layout: base.njk
+title: Team
+description: Unser Team - Spieler, Trainer und Betreuer der Sportunion Rudmanns.
+---
+
+<section class="section">
+  <div class="container">
+    <h1 class="heading-1 text-center mb-8">Unsere Mannschaft</h1>
+    
+    <div class="team-grid">
+      {% for player in collections.players %}
+      <article class="card team-card">
+        {% if player.data.image %}
+        <img src="{{ player.data.image }}" alt="{{ player.data.title }}" class="team-image">
+        {% endif %}
+        <div class="card-content">
+          <h3 class="team-name">{{ player.data.title }}</h3>
+          {% if player.data.position %}
+          <span class="team-position">{{ player.data.position }}</span>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<style>
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-6);
+}
+
+.team-card {
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+}
+
+.team-image {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.team-name {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+}
+
+.team-position {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+}
+</style>

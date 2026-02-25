@@ -1,0 +1,40 @@
+---
+layout: base.njk
+title: Spielplan
+description: Aktueller Spielplan der Sportunion Rudmanns.
+---
+
+<section class="section">
+  <div class="container">
+    <h1 class="heading-1 text-center mb-8">Spielplan</h1>
+    
+    <div class="spielplan-container">
+      <div class="spielplan-info">
+        <p class="text-center text-secondary mb-8">
+          Hier finden Sie alle anstehenden Spiele unserer Mannschaft in der Serie H.
+        </p>
+      </div>
+      
+      <div class="spielplan-placeholder">
+        <p>Der aktuelle Spielplan wird bald veröffentlicht.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.spielplan-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.spielplan-placeholder {
+  background: var(--bg-card);
+  padding: var(--space-12);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: var(--font-size-lg);
+  border: 2px dashed var(--bg-card);
+}
+</style>
