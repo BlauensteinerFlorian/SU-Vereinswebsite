@@ -3,49 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Der Vorstand der Sportunion Rudmanns.">
-  <meta name="theme-color" content="#FF6600">
-  
+  <meta name="description" content="Vorstand der Sportunion Rudmanns">
   <title>Vorstand | SU Rudmanns</title>
-  
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-  <!-- Styles -->
   <link rel="stylesheet" href="/css/style.css">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-  
-  <!-- Open Graph -->
-  <meta property="og:title" content="Vorstand | SU Rudmanns">
-  <meta property="og:description" content="Der Vorstand der Sportunion Rudmanns.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="/vorstand/">
-  <meta property="og:image" content="/assets/og-image.jpg">
-  
 </head>
 <body>
   <div class="page-wrapper">
-    <!-- Header / Navigation -->
-<header class="site-header">
-  <div class="container">
-    <nav class="main-nav">
-      <!-- Logo -->
-      <a href="/" class="logo">
-        <img src="/assets/logo-su-rudmanns.svg" alt="SU Rudmanns" class="logo-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-        <span class="logo-text" style="display: none;">SU RUDMANNS</span>
-      </a>
-      
-      <!-- Mobile Menu Button -->
-      <button class="mobile-menu-toggle" aria-label="Menü öffnen" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      
-            <!-- Navigation Links -->
+    <header class="site-header">
+      <div class="container">
+        <nav class="main-nav">
+          <a href="/" class="logo"><span class="logo-text">SU RUDMANNS</span></a>
             <ul class="nav-menu" id="navMenu">
         <li><a href="/team/" class="nav-link">Team</a></li>
         <li><a href="/vorstand/" class="nav-link active">Vorstand</a></li>
@@ -54,77 +21,46 @@
         <li><a href="/fanshop/" class="nav-link">Fanshop</a></li>
         <li><a href="/instagram/" class="nav-link">Instagram</a></li>
 </ul>
-    </nav>
-  </div>
-</header>
+        </nav>
+      </div>
+    </header>
 
-
-
-<script>
-function toggleMenu() {
-  const menu = document.getElementById('navMenu');
-  menu.classList.toggle('active');
-}
-
-// Schließe Menü bei Klick außerhalb
-document.addEventListener('click', function(e) {
-  const menu = document.getElementById('navMenu');
-  const toggle = document.querySelector('.mobile-menu-toggle');
-  if (!menu.contains(e.target) && !toggle.contains(e.target)) {
-    menu.classList.remove('active');
-  }
-});
-</script>
-
-    
     <main class="main-content">
-      
-<section class="section">
-  <div class="container">
-    <h1 class="heading-1 text-center mb-8">Unser Vorstand</h1>
-    
-    <div class="vorstand-grid">
-      <article class="vorstand-card">
-        <div class="vorstand-bild">👤</div>
-        <h3 class="vorstand-name">Christoph Kirchner</h3>
-        <span class="vorstand-position">Obmann</span>
-        <a href="mailto:matlkirchner1@gmail.com" class="vorstand-email">matlkirchner1@gmail.com</a>
-      </article>
-      
-      <article class="vorstand-card">
-        <div class="vorstand-bild">👨‍🏫</div>
-        <h3 class="vorstand-name">Wolfgang Steger</h3>
-        <span class="vorstand-position">Trainer</span>
-      </article>
-      
-      <article class="vorstand-card">
-        <div class="vorstand-bild">👤</div>
-        <h3 class="vorstand-name">Jonathan Bobleter</h3>
-        <span class="vorstand-position">Kassier</span>
-        <a href="mailto:jonathan.bobleter@gmail.com" class="vorstand-email">jonathan.bobleter@gmail.com</a>
-      </article>
-      
-      <article class="vorstand-card">
-        <div class="vorstand-bild">👤</div>
-        <h3 class="vorstand-name">Christoph Paydal</h3>
-        <span class="vorstand-position">Social Media</span>
-        <a href="mailto:christoph.paydal@gmail.com" class="vorstand-email">christoph.paydal@gmail.com</a>
-      </article>
-    </div>
-  </div>
-</section>
-
-
-
+      <section class="section">
+        <div class="container">
+          <h1 class="heading-1 text-center mb-8">Unser Vorstand</h1>
+          
+          <div class="vorstand-grid">
+            <article class="vorstand-card">
+              <div class="vorstand-bild"><img src="/data/player_images/5_Christoph_Kirchner.jpg" alt="Christoph Kirchner"></div>
+              <h3 class="vorstand-name">Christoph Kirchner</h3>
+              <span class="vorstand-position">Obmann</span>
+              <a href="mailto:matlkirchner1@gmail.com" class="vorstand-email">matlkirchner1@gmail.com</a>
+            </article>
+            
+            <article class="vorstand-card">
+              <div class="vorstand-bild"><img src="/assets/wolfgang_steger.jpg" alt="Wolfgang Steger"></div>
+              <h3 class="vorstand-name">Wolfgang Steger</h3>
+              <span class="vorstand-position">Trainer</span>
+            </article>
+            
+            <article class="vorstand-card">
+              <div class="vorstand-bild"><img src="/data/player_images/14_Jonathan_Bobleter.jpg" alt="Jonathan Bobleter"></div>
+              <h3 class="vorstand-name">Jonathan Bobleter</h3>
+              <span class="vorstand-position">Kassier</span>
+              <a href="mailto:jonathan.bobleter@gmail.com" class="vorstand-email">jonathan.bobleter@gmail.com</a>
+            </article>
+            
+            <article class="vorstand-card">
+              <div class="vorstand-bild"><img src="/data/player_images/8_Christoph_Paydal.jpg" alt="Christoph Paydal"></div>
+              <h3 class="vorstand-name">Christoph Paydal</h3>
+              <span class="vorstand-position">Social Media</span>
+              <a href="mailto:christoph.paydal@gmail.com" class="vorstand-email">christoph.paydal@gmail.com</a>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
-    
-    <!-- Footer -->
-
-
-
-  </div>
-  
-  
 
     <footer class="site-footer">
       <div class="container">
@@ -148,8 +84,8 @@ document.addEventListener('click', function(e) {
           <div class="footer-section">
             <h3 class="footer-heading">Folge uns</h3>
             <div class="social-links">
-              <a href="https://instagram.com/surudmanns" target="_blank" rel="noopener" class="social-link">📷</a>
-              <a href="https://facebook.com/surudmanns" target="_blank" rel="noopener" class="social-link">📘</a>
+              <a href="https://instagram.com/surudmanns" target="_blank" class="social-link">📷</a>
+              <a href="https://facebook.com/surudmanns" target="_blank" class="social-link">📘</a>
             </div>
           </div>
         </div>
@@ -158,6 +94,6 @@ document.addEventListener('click', function(e) {
         </div>
       </div>
     </footer>
-
+  </div>
 </body>
 </html>

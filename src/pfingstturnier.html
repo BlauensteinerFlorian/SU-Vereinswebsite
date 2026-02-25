@@ -3,49 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Das jährliche Pfingstturnier der Sportunion Rudmanns.">
-  <meta name="theme-color" content="#FF6600">
-  
+  <meta name="description" content="Pfingstturnier der Sportunion Rudmanns">
   <title>Pfingstturnier | SU Rudmanns</title>
-  
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-  <!-- Styles -->
   <link rel="stylesheet" href="/css/style.css">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-  
-  <!-- Open Graph -->
-  <meta property="og:title" content="Pfingstturnier | SU Rudmanns">
-  <meta property="og:description" content="Das jährliche Pfingstturnier der Sportunion Rudmanns.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="/pfingstturnier/">
-  <meta property="og:image" content="/assets/og-image.jpg">
-  
 </head>
 <body>
   <div class="page-wrapper">
-    <!-- Header / Navigation -->
-<header class="site-header">
-  <div class="container">
-    <nav class="main-nav">
-      <!-- Logo -->
-      <a href="/" class="logo">
-        <img src="/assets/logo-su-rudmanns.svg" alt="SU Rudmanns" class="logo-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-        <span class="logo-text" style="display: none;">SU RUDMANNS</span>
-      </a>
-      
-      <!-- Mobile Menu Button -->
-      <button class="mobile-menu-toggle" aria-label="Menü öffnen" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      
-            <!-- Navigation Links -->
+    <header class="site-header">
+      <div class="container">
+        <nav class="main-nav">
+          <a href="/" class="logo"><span class="logo-text">SU RUDMANNS</span></a>
+          <button class="mobile-menu-toggle" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+          </button>
             <ul class="nav-menu" id="navMenu">
         <li><a href="/team/" class="nav-link">Team</a></li>
         <li><a href="/vorstand/" class="nav-link">Vorstand</a></li>
@@ -54,84 +24,89 @@
         <li><a href="/fanshop/" class="nav-link">Fanshop</a></li>
         <li><a href="/instagram/" class="nav-link">Instagram</a></li>
 </ul>
-    </nav>
-  </div>
-</header>
-
-
-
-<script>
-function toggleMenu() {
-  const menu = document.getElementById('navMenu');
-  menu.classList.toggle('active');
-}
-
-// Schließe Menü bei Klick außerhalb
-document.addEventListener('click', function(e) {
-  const menu = document.getElementById('navMenu');
-  const toggle = document.querySelector('.mobile-menu-toggle');
-  if (!menu.contains(e.target) && !toggle.contains(e.target)) {
-    menu.classList.remove('active');
-  }
-});
-</script>
-
-    
-    <main class="main-content">
-      
-<section class="section">
-  <div class="container">
-    <h1 class="heading-1 text-center mb-4">Pfingstturnier</h1>
-    <p class="text-center text-secondary mb-8">Das Highlight für Hobby-Teams</p>
-    
-    <div class="pfingstturnier-content">
-      <article class="info-card">
-        <h2>Über das Turnier</h2>
-        <p>Jedes Jahr an Pfingsten veranstalten wir unser beliebtes Turnier für Hobby-Mannschaften. Ein Wochenende voller Fußball, Spaß und guter Stimmung erwartet die teilnehmenden Teams.</p>
-      </article>
-      
-      <div class="info-grid">
-        <article class="info-box">
-          <h3>🗓 Termin</h3>
-          <p>Pfingstwochenende</p>
-        </article>
-        
-        <article class="info-box">
-          <h3>📍 Ort</h3>
-          <p>Birkenstadion, Stift Zwettl</p>
-        </article>
-        
-        <article class="info-box">
-          <h3>👥 Teams</h3>
-          <p>Hobby-Mannschaften</p>
-        </article>
-        
-        <article class="info-box">
-          <h3>🏆 Preise</h3>
-          <p>Attraktive Preise für die Besten</p>
-        </article>
+        </nav>
       </div>
-      
-      <article class="info-card mt-8">
-        <h2>Anmeldung</h2>
-        <p>Interessierte Teams können sich über unsere Kontaktseite anmelden. Die Plätze sind begrenzt - also schnell sein!</p>
-        <a href="mailto:sportunionrudmanns@gmail.com" class="btn btn-primary mt-4">Zur Anmeldung</a>
-      </article>
-    </div>
-  </div>
-</section>
+    </header>
 
+    <main class="main-content">
+      <section class="section">
+        <div class="container">
+          <h1 class="heading-1 text-center mb-8">Pfingstturnier 2026</h1>
+          
+          <!-- Countdown -->
+          <div class="countdown-container">
+            <h2 class="countdown-title">Countdown zum Pfingstturnier</h2>
+            <div class="countdown-grid">
+              <div class="countdown-item">
+                <span class="countdown-number" id="days">--</span>
+                <span class="countdown-label">Tage</span>
+              </div>
+              <div class="countdown-item">
+                <span class="countdown-number" id="hours">--</span>
+                <span class="countdown-label">Stunden</span>
+              </div>
+              <div class="countdown-item">
+                <span class="countdown-number" id="minutes">--</span>
+                <span class="countdown-label">Minuten</span>
+              </div>
+              <div class="countdown-item">
+                <span class="countdown-number" id="seconds">--</span>
+                <span class="countdown-label">Sekunden</span>
+              </div>
+            </div>
+          </div>
 
+          <script>
+            const targetDate = new Date("2026-05-24T10:00:00+02:00").getTime();
+            function updateCountdown() {
+              const now = new Date().getTime();
+              const distance = targetDate - now;
+              if (distance < 0) {
+                document.getElementById("days").innerHTML = "0";
+                document.getElementById("hours").innerHTML = "0";
+                document.getElementById("minutes").innerHTML = "0";
+                document.getElementById("seconds").innerHTML = "0";
+                return;
+              }
+              const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+              document.getElementById("days").innerHTML = days;
+              document.getElementById("hours").innerHTML = hours;
+              document.getElementById("minutes").innerHTML = minutes;
+              document.getElementById("seconds").innerHTML = seconds;
+            }
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+          </script>
 
+          <!-- Turnier Bild -->
+          <div class="team-photo-wrapper mb-8" style="margin-top: 30px;">
+            <img src="/assets/pfingstturnier-bild.jpg" alt="Pfingstturnier" class="team-photo">
+          </div>
+
+          <div class="info-grid mt-8">
+            <div class="info-card">
+              <span class="info-number">24. Mai</span>
+              <span class="info-label">Datum</span>
+            </div>
+            <div class="info-card">
+              <span class="info-number">ab 10:00</span>
+              <span class="info-label">Startzeit</span>
+            </div>
+            <div class="info-card">
+              <span class="info-number">Serie H</span>
+              <span class="info-label">Liga</span>
+            </div>
+            <div class="info-card">
+              <span class="info-number">Birkenstadion</span>
+              <span class="info-label">Ort</span>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    
-    <!-- Footer -->
-
-
-
-  </div>
-  
-  
 
     <footer class="site-footer">
       <div class="container">
@@ -155,8 +130,8 @@ document.addEventListener('click', function(e) {
           <div class="footer-section">
             <h3 class="footer-heading">Folge uns</h3>
             <div class="social-links">
-              <a href="https://instagram.com/surudmanns" target="_blank" rel="noopener" class="social-link">📷</a>
-              <a href="https://facebook.com/surudmanns" target="_blank" rel="noopener" class="social-link">📘</a>
+              <a href="https://instagram.com/surudmanns" target="_blank" class="social-link">📷</a>
+              <a href="https://facebook.com/surudmanns" target="_blank" class="social-link">📘</a>
             </div>
           </div>
         </div>
@@ -165,6 +140,9 @@ document.addEventListener('click', function(e) {
         </div>
       </div>
     </footer>
-
+  </div>
+  <script>
+    function toggleMenu() { document.getElementById('navMenu').classList.toggle('active'); }
+  </script>
 </body>
 </html>
